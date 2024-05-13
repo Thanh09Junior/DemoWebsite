@@ -1,0 +1,538 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Amethysta", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/*--------------- Header --------------*/
+
+header {
+    min-width: 100px;
+    min-height: 680px;
+    position: relative;
+    overflow: hidden;
+}
+
+header .containers {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 13px;
+    gap: 245px;
+    transition: all 0.1s ease-in-out;
+}
+
+.ico {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.ico p {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+
+nav ul li {
+    list-style: none;
+    border: 2px solid #F0EB7B;
+    padding: 8px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li:hover {
+    border-color: #7B95F0;
+}
+
+nav ul li.hover a {
+    color: #09fae6;
+}
+
+/* Hiệu ứng hover cho các liên kết khi di chuột */
+nav ul li a:hover {
+    color: #09fae6;
+}
+
+nav ul li a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #09fae6;
+}
+
+.fixed {
+    margin-top: 0px !important;
+    position: fixed;
+    /* Giữ nguyên margin-top */
+    left: 50%;
+    /* Đưa container vào giữa header */
+    transform: translateX(-50%);
+    /* Dịch container sang trái 50% để căn giữa */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 13px;
+    gap: 245px;
+    z-index: 999;
+    /* Đảm bảo container hiển thị trên các phần tử khác */
+    width: 100%;
+    /* Đảm bảo container rộng bằng header */
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.Video_container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -100;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 100px;
+}
+
+.Video_container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header .Main {
+    margin-top: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 500px
+}
+
+header .Main .Main_Text p {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    line-height: 20px;
+    color: white;
+}
+
+header .Main .Main_Text a {
+    border: 2px solid #F0EB7B;
+    padding: 8px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    color: white;
+}
+
+header .Main .Main_Text a:hover {
+    border-color: #7B95F0;
+    color: #09fae6;
+}
+
+.Main .Picture img {
+    width: 200px;
+    height: 200px;
+}
+
+.Main .Picture img:hover {
+    width: 200px;
+    height: 200px;
+}
+
+.Slogan {
+    margin-top: 160px;
+    text-align: center;
+}
+
+.Slogan p {
+    min-width: 100px;
+    text-align: center;
+}
+
+.Slogan p::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    /* Đưa gạch dưới về giữa */
+    bottom: 9%;
+    min-width: 600px;
+    height: 2px;
+    /* Độ dày của gạch dưới */
+    background-color: #F0EB7B;
+    /* Màu của gạch dưới */
+    transform: translateX(-50%);
+}
+
+/* Dịc
+}
+
+/*------------Section 1--------------*/
+.section1 {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./Assest/section2/download.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section1 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 200px;
+    padding: 100px 0 100px 0;
+}
+
+
+.section1 .container .Main_text h2 {
+    margin-bottom: 80px;
+    color: #FFDF6C;
+}
+
+.section1 .container .Main_text p {
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+
+#Sec2::after {
+    content: "";
+    display: block;
+    /* Đảm bảo gạch dưới là một phần tử block */
+    width: 100%;
+    /* Chiều rộng của gạch dưới */
+    height: 3px;
+    /* Độ dày của gạch dưới */
+    background-color: #F0EB7B;
+    /* Màu của gạch dưới */
+    margin-top: 25px;
+    /* Khoảng cách giữa phần tử <p> và gạch dưới */
+}
+
+.section1 .container .Main_text ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.section1 .container .Main_text ul li a {
+    width: 32px;
+    height: 32px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.section1 .container .Main_text ul li a i {
+    transition: 0.5s ease-in-out;
+}
+
+.section1 .container .Main_text ul li a i:hover {
+    color: rgb(255, 2, 120) !important;
+    transform: translateY(-20px);
+
+}
+
+#fac {
+    margin-right: 100px;
+}
+
+
+/*-------------- Section 2----------------*/
+.section2 {
+    position: relative;
+}
+
+.section2 .container {
+    display: block;
+    text-align: center;
+    padding: 100px 0 200px 0;
+}
+
+.section2 .container .Skill {
+    margin-top: 60px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 90px;
+}
+
+.section2 .container .Skill .Skillframe {
+    width: 200px;
+    padding: 20px;
+    border: 2px solid linear-gradient(to bottom, #F5FCFF 97%, #5E3BEE 3%);
+    text-align: justify;
+    background-image: linear-gradient(to bottom, #F5FCFF 99%, #5E3BEE 1%);
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.section2 .container .Skill .Skillframe:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.Skill .Skillframe img {
+    width: 62px;
+    height: 62px;
+    transform: translate(115%);
+    margin-bottom: 40px;
+}
+
+.Skill .Skillframe h3 {
+    text-align: center;
+    color: #1921C0;
+    margin-bottom: 40px;
+}
+
+.section2 .container h2 {
+    color: #FFDF6C
+}
+
+
+/*-------------- Section 3 ----------------*/
+.section3 {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./Assest/section4/a.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section3 .container {
+    display: block;
+    text-align: center;
+    padding: 100px 0 100px 0;
+}
+
+.section3 .container h2 {
+    color: #FFDF6C
+}
+
+.section3 .container .Skill {
+    margin-top: 60px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 90px;
+}
+
+.section3 .container .Skill .Skillframe {
+    width: 400px;
+    padding: 20px;
+    border: 2px solid linear-gradient(to bottom, #F5FCFF 97%, #5E3BEE 3%);
+    text-align: justify;
+    background-image: linear-gradient(to bottom, #F5FCFF 99%, #5E3BEE 1%);
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.section3 .container .Skill .Skillframe:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.section3 .container .Skill .Skillframe img {
+    width: 62px;
+    height: 62px;
+    transform: translate(280%);
+    margin-bottom: 40px;
+}
+
+#Sec3 {
+    margin: 60px 0 30px 0;
+    color: #F3C316;
+}
+
+.section3 .container a {
+    border: 2px solid #15F4E7;
+    padding: 12px;
+    color: #1CDDEA;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.section3 .container a:hover {
+    border-color: #F3C316;
+    color: #F3C316
+}
+
+/*-------------- Section 4 ----------------*/
+.section4 {
+    position: relative;
+}
+
+.section4 .container {
+    text-align: center;
+    padding: 40px 0 100px 0;
+}
+
+.section4 .container h2 {
+    color: #FFDF6C;
+    margin-bottom: 40px;
+}
+
+#sec4 {
+    color: #325BEF;
+}
+
+.section4 .container .Contact_Main {
+    display: flex;
+    margin-top: 100px;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    margin-left: 150px;
+}
+
+.section4 .container .Contact_Main .Contact_text {
+    text-align: left;
+}
+
+.section4 .container .Contact_Main .Contact_text .Contact_t_1 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.section4 .container .Contact_Main .Contact_text .Contact_t_1 p {
+    display: inline-block;
+    font-size: 22px;
+    margin-left: 30px;
+}
+
+.section4 .container .Contact_Main .Contact_text .Contact_t_1 i {
+    color: orange;
+}
+
+.section4 .container .Contact_Main .Contact_text .Contact_t_1 ul {
+    margin-top: 60px;
+}
+
+.section4 .container .Contact_Main .Contact_text .Contact_t_1 ul li {
+    display: inline-block;
+    font-size: 25px;
+}
+
+.section4 .container .Contact_Main .Contact_text .Contact_t_1 ul li a i {
+    transition: 0.5s ease-in-out;
+}
+
+.section4 .container .Contact_Main .Contact_text .Contact_t_1 ul li a i:hover {
+    color: rgb(255, 2, 120) !important;
+    transform: translateY(-10px);
+
+}
+
+/*-------------- Section 5 ----------------*/
+footer {
+    position: relative;
+    background-color: #0A142F;
+    padding: 50px 0 50px 50px;
+    color: white;
+    overflow: hidden;
+}
+
+footer .container .Conlusion h4 {
+    font-size: 24px;
+}
+
+footer .container .All-Footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 230px;
+    margin-bottom: 60px;
+}
+
+footer .container .Copyright {
+    text-align: center;
+}
+
+footer .container .Copyright p {
+    text-align: center;
+}
+
+footer .container .Copyright p::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    /* Đưa gạch dưới về giữa */
+    bottom: 9%;
+    min-width: 1300px;
+    height: 2px;
+    /* Độ dày của gạch dưới */
+    background-color: #F0EB7B;
+    /* Màu của gạch dưới */
+    transform: translateX(-50%);
+}
+
+footer .container .All-Footer .Conlusion {
+    line-height: 35px;
+}
+
+footer .container .All-Footer .Link {
+    line-height: 28px;
+}
+
+footer .container .All-Footer .Web_link {
+    line-height: 28px;
+    margin-bottom: 50px;
+}
+
+footer .container .All-Footer ul li {
+    list-style-type: none;
+}
+
+footer .container .All-Footer ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.1s ease-in-out;
+}
+
+footer .container .All-Footer ul li a:hover {
+    text-decoration: none;
+    color: rgb(255, 174, 0);
+}
+
+footer .container .All-Footer .Social_media ul li {
+    display: inline-block;
+    width: 60px;
+    font-size: 24px;
+}
+
+footer .container .All-Footer .Social_media {
+    margin-bottom: 70px;
+}
+
+footer .container .All-Footer .Social_media ul li a i {
+    transition: 0.5s ease-in-out;
+}
+
+footer .container .All-Footer .Social_media ul li a i:hover {
+    color: rgb(255, 2, 120) !important;
+    transform: translateY(-10px);
+}
+
+footer .container .All-Footer .Social_media p {
+    margin: 0 0 25px 18px;
+}
