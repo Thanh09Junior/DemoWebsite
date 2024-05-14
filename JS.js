@@ -104,6 +104,9 @@ function togglePlay() {
 // Kiểm tra khi bài hát kết thúc và chuyển sang bài hát tiếp theo
 audio.onended = function () {
     currentSongIndex = currentSongIndex + 1;
+    if (currentSongIndex >= 3) {
+        currentSongIndex = 0;
+    }
     currentLyricsIndex = currentSongIndex;
     audio.src = songs[currentSongIndex];
     togglePlay();

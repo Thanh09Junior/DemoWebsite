@@ -15,265 +15,274 @@
 </head>
 
 <body>
-    <header id="head">
-        <div class="Video_container">
-            <video src="./Assest/section1/Background.mp4" autoplay loop muted></video>
-        </div>
-        <div class="Song" id="songContainer" style="display: none;">
-            <video src="./Assest/song/gif.webm" alt="Disco spinning" autoplay loop muted></video>
-            <div class="lyrics" id="lyrics1" style="display: none;">
-                <p style=" color:rgb(255, 102, 0)">Now Playing:</p>
-                <p><br>Cash Cash - Hero ft. Christina Perri</p>
+    <div class="app">
+        <header id="head">
+            <div class="Video_container">
+                <video src="./Assest/section1/Background.mp4" autoplay loop muted></video>
             </div>
-            <div class="lyrics" id="lyrics2" style="display: none;">
-                <p style="color:rgb(255, 102, 0)">Now Playing:</p>
-                <p><br>Unstoppable| Sia |I'm Unstoppable"</p>
-            </div>
-            <div class="lyrics" id="lyrics3" style="display: none;">
-                <p style="color:rgb(255, 102, 0)">Now Playing:</p>
-                <p><br>Justin Bieber - Never Say Never ft.</p>
-            </div>
-        </div>
-        <div class="containers">
-            <div class="ico">
-                <img src="./Assest/header/icon.png" alt="Ảnh icon của Mai Hồng" width="54px" height="54px">
-                <a href="https://www.facebook.com/thimaihong.le.54" target="_blank">
-                    <p>@maihongdayne</p>
-                </a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#head">Trang chủ</a></li>
-                    <li><a href="#sec1">Về mình</a></li>
-                    <li><a href="#sec2">Kỹ năng</a></li>
-                    <li><a href="#sec3">Dịch vụ</a></li>
-                    <li><a href="#sec4">Liên hệ</a></li>
-                </ul>
-            </nav>
-            <div class="Time" style="color: white">
-                <p>@ <span id="datetime"></span> </p>
-            </div>
-        </div>
-        <div class="Main">
-            <div class="Main_Text">
-                <h1 style="color:#ECE539">
-                    Mình là Mai Hồng
-                </h1>
-                <h1 style="color:#39ECAB" id="Repon">
-                    Sinh viên đại học Mở TPHCM
-                </h1>
-                <p>
-                    Đối với mình thì bạn là ai không quan trọng. Miễn bạn mang trong mình một ngọn<br> lửa nhiệt huyết
-                    và động lực phấn đấu thì mình sẽ cùng đồng hành cùng bạn.
-                </p>
-                <a href="#sec1">Tìm hiểu thêm</a><span style="margin-left: 40px;color: white"><i
-                        class="fa-solid fa-play" onclick="togglePlay()" id="playIcon"></i><i class="fa-solid fa-pause"
-                        onclick="togglePlay()" id="pauseIcon" style="display: none;"></i></span>
-            </div>
-            <div class="Picture">
-                <img src="./Assest/section1/Mai.webp" alt="Ảnh icon của Mai Hồng x2">
-            </div>
-        </div>
-        <div class="Slogan">
-            <p style="color:#FF0FF5; margin-bottom: 20px;">
-                Động lực mỗi ngày
-            </p>
-            <p style="color:#F0EB7B" id="Underline" class="job-title">
-            </p>
-        </div>
-
-    </header>
-
-    <section class="section1" id="sec1">
-        <div class="container">
-            <div class="Main_text">
-                <h2>
-                    Về mình
-                </h2>
-                <p>
-                    Mình là sinh viên năm nhất. Học tại trường đại học Mở TP.HCM. <br>Mình hiện tại đang học ngôn ngữ
-                    trung
-                    với trình độ hiện tại là HSK5. <br>Mong muốn của mình đó là trở thành người truyền động lực cũng như
-                    <br> giúp mọi người trong con đường học tập - làm việc.
-                </p>
-                <p id="Sec2">
-                    Đối với mình thời gian sẽ là câu trả lời cho mọi câu hỏi.<br> Miễn là ta có đủ kiên trì để chờ đến
-                    khoảng
-                    khắc đó?
-                </p>
-                <ul>
-                    <li><a href="https://www.facebook.com/thimaihong.le.54" target="_blank" id="fac" alt="Facebook"
-                            aria-label="Facebook"><i class="fa-brands fa-facebook"
-                                style="color:rgb(25, 0, 255)"></i></a>
-                    </li>
-                    <li><a href="https://www.tiktok.com/@maihongdayne" target="_blank" alt="Tiktok"
-                            aria-label="Tiktok"><i class="fa-brands fa-tiktok" style="color:black"></i></a></li>
-                </ul>
-            </div>
-            <div class="Video">
-                <video width="560" height="315" src="./Assest/section2/Motivation.mp4" controls
-                    style="border-radius: 20px;border: 0px;" poster="./Assest/section2/maxresdefault.webp"></iframe>
-            </div>
-        </div>
-    </section>
-
-    <section class="section2" id="sec2">
-        <div class="container">
-            <h2>Kinh nghiệm</h2>
-            <div class="Skill">
-                <div class="Skillframe">
-                    <img src="./Assest/section3/product-chain1.webp" alt="Khả năng truyền đạt">
-                    <h3>Khả năng truyền đạt</h3>
-                    <p>Mình có khả năng truyền đạt lại kiến thức ở mức tương đối tốt.
-                        Mục tiêu của mình khi truyền đạt đó là chậm mà chắc.</p>
+            <div class="Song" id="songContainer" style="display: none;">
+                <video src="./Assest/song/gif.webm" alt="Disco spinning" autoplay loop muted></video>
+                <div class="lyrics" id="lyrics1" style="display: none;">
+                    <p style=" color:rgb(255, 102, 0)">Now Playing:</p>
+                    <p><br>Cash Cash - Hero ft. Christina Perri</p>
                 </div>
-                <div class="Skillframe">
-                    <img src="./Assest/section3/tag1.webp" alt="Ngôn ngữ học">
-                    <h3>Ngôn ngữ học</h3>
-                    <p>Mình có vốn hiểu biết sâu rộng về và ngôn ngữ trung.Đặc biệt là ngôn ngữ trung nhé.
-                        Bạn có thể tin tưởng ở mình.</p>
+                <div class="lyrics" id="lyrics2" style="display: none;">
+                    <p style="color:rgb(255, 102, 0)">Now Playing:</p>
+                    <p><br>Unstoppable| Sia |I'm Unstoppable"</p>
                 </div>
-                <div class="Skillframe">
-                    <img src="./Assest/section3/feather-pen1.webp" alt="Bằng cấp">
-                    <h3>Bằng cấp</h3>
-                    <p>Trình độ hiện tại của mình là HSK5 ngôn ngữ Trung.
-
-                        Chứng chỉ: HSK4, HSKK trung cấp</p>
-                </div>
-                <div class="Skillframe">
-                    <img src="./Assest/section3/feather-pen-1.webp" alt="Động lực">
-                    <h3>Tạo động lực</h3>
-                    <p>Ngoài ra mình có khả năng tạo động lực thông qua những clip ngắn của mình bằng tiếng
-                        Trung
-                        vừa
-                        giúp cho việc học tập và lan tỏa sự tích cực.</p>
+                <div class="lyrics" id="lyrics3" style="display: none;">
+                    <p style="color:rgb(255, 102, 0)">Now Playing:</p>
+                    <p><br>Justin Bieber - Never Say Never ft.</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="section3" id="sec3">
-        <div class="container">
-            <h2>Dịch vụ</h2>
-            <div class="Skill">
-                <div class="Skillframe">
-                    <img src="./Assest/section3/product-chain1.webp" alt="Lớp tiếng trung sơ cấp 1">
-                    <h3>Lớp tiếng trung sơ cấp 1 (HSK1)</h3>
-                    <p>Hiện tại mình đang mở lớp dạy tiếng trung sơ cấp 1. Hoàn toàn dành cho những bạn nào muốn học
-                        tiếng trung mà chưa biết bắt đầu từ đâu nhé.<br><br>
-
-                        <span style="color:#6056ee ">Chương trình học:</span> Giáo trình chuẩn HSK1, Giải đề thi thử
-                        HSK1.
-
-                        <br><br> <span style="color:#6056ee ">Thời lượng:</span> 20 buổi online.
-                        <br><br> <span style="color:#6056ee ">Người giảng dạy:</span> Lê Thị Mai Hồng.
-                    </p>
+            <div class="containers">
+                <div class="ico">
+                    <img src="./Assest/header/icon.png" alt="Ảnh icon của Mai Hồng" width="54px" height="54px">
+                    <a href="https://www.facebook.com/thimaihong.le.54" target="_blank">
+                        <p>@maihongdayne</p>
+                    </a>
                 </div>
-                <div class="Skillframe">
-                    <img src="./Assest/section3/feather-pen-1.webp" alt="Quyền lợi">
-                    <h3>Quyền lợi</h3>
-                    <p>Được chỉnh sửa phát âm ngay từ đầu
-                        <br><br>Tìm hiểu văn hóa Trung Quốc
-                        <br><br> Tiếp cận các khóa học trại đông trại hè tại các trường ĐH/CĐ Trung Quốc (nếu có tổ
-                        chức)
-                        <br><br><span style="color:#6056ee ">Học phí:</span> Phù hợp với HSSV
-
-                        <br><br><span style="color:#6056ee ">Thời gian khai giảng:</span> 03/06/2024
-                    </p>
-                </div>
-            </div>
-            <p id="Sec3">Bạn có hứng thú với chương trình học? Liên hệ ngay!</p>
-            <a href="https://www.facebook.com/thimaihong.le.54" target="_blank">Tìm hiểu thêm</a>
-        </div>
-    </section>
-
-    <section class="section4" id="sec4">
-        <div class="container">
-            <h2 style="font-size: 25px;">Liên hệ</h2>
-            <p id="Sec4" style="font-size: 20px;">Nếu bạn có điều gì trăn trở thì hãy liên hệ mình nhé.</p>
-            <div class="Contact_Main">
-                <div class="Contact_text">
-                    <div class="Contact_t_1">
-                        <i class="fa-solid fa-phone"></i>
-                        <p><span style="color: #2847f7;">SĐT: </span> 0374127004 (Zalo)</p>
-                    </div>
-                    <div class="Contact_t_1">
-                        <i class="fa-solid fa-envelope"></i>
-                        <p><span style="color: #2847f7;">Email: </span> Juniorthanh09@gmail.com</p>
-                    </div>
-                    <div class="Contact_t_1">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <p><span style="color: #2847f7;">Location: </span> Đại học Mở TP.HCM cơ sở 1</p>
-                    </div>
-                    <div class="Contact_t_1">
-                        <ul>
-                            <li><a href="https://www.facebook.com/thimaihong.le.54" target="_blank" id="fac"
-                                    alt="Facebook" aria-label="Facebook"><i class="fa-brands fa-facebook"
-                                        style="color:rgb(25, 0, 255)"></i></a>
-                            </li>
-                            <li><a href="https://www.tiktok.com/@maihongdayne" target="_blank" alt="Tiktok"
-                                    aria-label="Tiktok"><i class="fa-brands fa-tiktok" style="color:black"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="map">
-                    <img src="./Assest/section4/Capture.webp" width="705" height="398" style="border:0;"
-                        alt="Trường đại học Mở TPHCM"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="All-Footer">
-                <div class="Conlusion">
-                    <p style=" color:#14f1d4">@maihongdayne</p>
-                    <h3 style=" color:#f1c814">Mình là Mai Hồng</h3>
-                    <p>Sđt: 0374127004</p>
-                    <p>Email: Juniorthanh09@gmail.com</p>
-                    <p style="font-size: 20px; color:#39ECAB">“Hãy sống chứ đừng chỉ tốn tại”</p>
-                </div>
-                <div class="Link">
-                    <p style=" color:#14f1d4">
-                        Điều hướng:
-                    </p>
+                <nav>
                     <ul>
-                        <li><a href="#head">+ Trang chủ</a></li>
-                        <li><a href="#sec1">+ Về mình</a></li>
-                        <li><a href="#sec2">+ Kinh nghiệm</a></li>
-                        <li><a href="#sec3">+ Dịch vụ</a></li>
-                        <li><a href="#sec4">+ Liên hệ</a></li>
+                        <li><a href="#head">Trang chủ</a></li>
+                        <li><a href="#sec1">Về mình</a></li>
+                        <li><a href="#sec2">Kỹ năng</a></li>
+                        <li><a href="#sec3">Dịch vụ</a></li>
+                        <li><a href="#sec4">Liên hệ</a></li>
                     </ul>
+                </nav>
+                <div class="Time" style="color: white">
+                    <p>@ <span id="datetime"></span> </p>
                 </div>
-                <div class="Web_link">
-                    <p style=" color:#14f1d4">
-                        Các nguồn website khác:
+            </div>
+            <div class="Main">
+                <div class="Main_Text">
+                    <h1 style="color:#ECE539">
+                        Mình là Mai Hồng
+                    </h1>
+                    <h1 style="color:#39ECAB" id="Repon">
+                        Sinh viên đại học Mở TP.HCM
+                    </h1>
+                    <p>
+                        Đối với mình thì bạn là ai không quan trọng. Miễn bạn mang trong mình một ngọn<br> lửa nhiệt
+                        huyết
+                        và động lực phấn đấu thì mình sẽ đồng hành cùng bạn.
                     </p>
-                    <ul>
-                        <li><a href="https://ou.edu.vn/" target="_blank">+ OU.</a></li>
-                        <li><a href="#">+ CV.</a></li>
-                        <li><a href="#">+ Poster.</a></li>
-                    </ul>
+                    <a href="#sec1">Tìm hiểu thêm</a><span style="margin-left: 40px;color: white"><i
+                            class="fa-solid fa-play" onclick="togglePlay()" id="playIcon"></i><i
+                            class="fa-solid fa-pause" onclick="togglePlay()" id="pauseIcon"
+                            style="display: none;"></i></span>
                 </div>
-                <div class="Social_media">
-                    <p style=" color:#14f1d4">Liên hệ</p>
+                <div class="Picture">
+                    <img src="./Assest/section1/Mai.webp" alt="Ảnh icon của Mai Hồng x2">
+                </div>
+            </div>
+            <div class="Slogan">
+                <p style="color:#FF0FF5; margin-bottom: 20px;">
+                    Động lực mỗi ngày
+                </p>
+                <p style="color:#F0EB7B" id="Underline" class="job-title">
+                </p>
+            </div>
+
+        </header>
+
+        <section class="section1" id="sec1">
+            <div class="container">
+                <div class="Main_text">
+                    <h2>
+                        Về mình
+                    </h2>
+                    <p>
+                        Mình là sinh viên năm nhất. Học tại trường đại học Mở TP.HCM. <br>Mình hiện tại đang học ngôn
+                        ngữ
+                        trung
+                        với trình độ hiện tại là HSK5. <br>Mong muốn của mình đó là trở thành người truyền động lực cũng
+                        như
+                        <br> giúp mọi người trong con đường học tập - làm việc.
+                    </p>
+                    <p id="Sec2">
+                        Đối với mình thời gian sẽ là câu trả lời cho mọi câu hỏi.<br> Miễn là ta có đủ kiên trì để chờ
+                        đến
+                        khoảng
+                        khắc đó?
+                    </p>
                     <ul>
                         <li><a href="https://www.facebook.com/thimaihong.le.54" target="_blank" id="fac" alt="Facebook"
                                 aria-label="Facebook"><i class="fa-brands fa-facebook"
                                     style="color:rgb(25, 0, 255)"></i></a>
                         </li>
                         <li><a href="https://www.tiktok.com/@maihongdayne" target="_blank" alt="Tiktok"
-                                aria-label="Tiktok"><i class="fa-brands fa-tiktok"
-                                    style="color:rgb(109, 97, 101)"></i></a></li>
+                                aria-label="Tiktok"><i class="fa-brands fa-tiktok" style="color:black"></i></a></li>
                     </ul>
                 </div>
+                <div class="Video">
+                    <video width="560" height="315" src="./Assest/section2/Motivation.mp4" controls
+                        style="border-radius: 20px;border: 0px;" poster="./Assest/section2/maxresdefault.webp"></iframe>
+                </div>
             </div>
-            <div class="Copyright">
-                <p id="Foot"> © 2023 Copyright | Developer: Junior Newbie | Owner: Mai Hồng</p>
+        </section>
+
+        <section class="section2" id="sec2">
+            <div class="container">
+                <h2>Kinh nghiệm</h2>
+                <div class="Skill">
+                    <div class="Skillframe">
+                        <img src="./Assest/section3/product-chain1.webp" alt="Khả năng truyền đạt">
+                        <h3>Khả năng truyền đạt</h3>
+                        <p>Mình có khả năng truyền đạt lại kiến thức ở mức tương đối tốt.
+                            Mục tiêu của mình khi truyền đạt đó là chậm mà chắc.</p>
+                    </div>
+                    <div class="Skillframe">
+                        <img src="./Assest/section3/tag1.webp" alt="Ngôn ngữ học">
+                        <h3>Ngôn ngữ học</h3>
+                        <p>Mình có vốn hiểu biết sâu rộng về và ngôn ngữ trung.Đặc biệt là ngôn ngữ trung nhé.
+                            Bạn có thể tin tưởng ở mình.</p>
+                    </div>
+                    <div class="Skillframe">
+                        <img src="./Assest/section3/feather-pen1.webp" alt="Bằng cấp">
+                        <h3>Bằng cấp</h3>
+                        <p>Trình độ hiện tại của mình là HSK5 ngôn ngữ Trung.
+
+                            Chứng chỉ: HSK4, HSKK trung cấp</p>
+                    </div>
+                    <div class="Skillframe">
+                        <img src="./Assest/section3/feather-pen-1.webp" alt="Động lực">
+                        <h3>Tạo động lực</h3>
+                        <p>Ngoài ra mình có khả năng tạo động lực thông qua những clip ngắn của mình bằng tiếng
+                            Trung
+                            vừa
+                            giúp cho việc học tập và lan tỏa sự tích cực.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
+        </section>
+
+        <section class="section3" id="sec3">
+            <div class="container">
+                <h2>Dịch vụ</h2>
+                <div class="Skill">
+                    <div class="Skillframe">
+                        <img src="./Assest/section3/product-chain1.webp" alt="Lớp tiếng trung sơ cấp 1">
+                        <h3>Lớp tiếng trung sơ cấp 1 (HSK1)</h3>
+                        <p>Hiện tại mình đang mở lớp dạy tiếng trung sơ cấp 1. Hoàn toàn dành cho những bạn nào muốn học
+                            tiếng trung mà chưa biết bắt đầu từ đâu nhé.<br><br>
+
+                            <span style="color:#6056ee ">Chương trình học:</span> Giáo trình chuẩn HSK1, Giải đề thi thử
+                            HSK1.
+
+                            <br><br> <span style="color:#6056ee ">Thời lượng:</span> 20 buổi online.
+                            <br><br> <span style="color:#6056ee ">Người giảng dạy:</span> Lê Thị Mai Hồng.
+                        </p>
+                    </div>
+                    <div class="Skillframe">
+                        <img src="./Assest/section3/feather-pen-1.webp" alt="Quyền lợi">
+                        <h3>Quyền lợi</h3>
+                        <p>Được chỉnh sửa phát âm ngay từ đầu
+                            <br><br>Tìm hiểu văn hóa Trung Quốc
+                            <br><br> Tiếp cận các khóa học trại đông trại hè tại các trường ĐH/CĐ Trung Quốc (nếu có tổ
+                            chức)
+                            <br><br><span style="color:#6056ee ">Học phí:</span> Phù hợp với HSSV
+
+                            <br><br><span style="color:#6056ee ">Thời gian khai giảng:</span> 03/06/2024
+                        </p>
+                    </div>
+                </div>
+                <p id="Sec3">Bạn có hứng thú với chương trình học? Liên hệ ngay!</p>
+                <a href="https://www.facebook.com/thimaihong.le.54" target="_blank">Tìm hiểu thêm</a>
+            </div>
+        </section>
+
+        <section class="section4" id="sec4">
+            <div class="container">
+                <h2 style="font-size: 25px;">Liên hệ</h2>
+                <p id="Sec4" style="font-size: 20px;">Nếu bạn có điều gì trăn trở thì hãy liên hệ mình nhé.</p>
+                <div class="Contact_Main">
+                    <div class="Contact_text">
+                        <div class="Contact_t_1">
+                            <i class="fa-solid fa-phone"></i>
+                            <p><span style="color: #2847f7;">SĐT: </span> 0374127004 (Zalo)</p>
+                        </div>
+                        <div class="Contact_t_1">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p><span style="color: #2847f7;">Email: </span> Juniorthanh09@gmail.com</p>
+                        </div>
+                        <div class="Contact_t_1">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p><span style="color: #2847f7;">Location: </span> Đại học Mở TP.HCM cơ sở 1</p>
+                        </div>
+                        <div class="Contact_t_1">
+                            <ul>
+                                <li><a href="https://www.facebook.com/thimaihong.le.54" target="_blank" id="fac"
+                                        alt="Facebook" aria-label="Facebook"><i class="fa-brands fa-facebook"
+                                            style="color:rgb(25, 0, 255)"></i></a>
+                                </li>
+                                <li><a href="https://www.tiktok.com/@maihongdayne" target="_blank" alt="Tiktok"
+                                        aria-label="Tiktok"><i class="fa-brands fa-tiktok" style="color:black"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <img src="./Assest/section4/Capture.webp" width="705" height="398" style="border:0;"
+                            alt="Trường đại học Mở TPHCM"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="All-Footer">
+                    <div class="Conlusion">
+                        <p style=" color:#14f1d4">@maihongdayne</p>
+                        <h3 style=" color:#f1c814">Mình là Mai Hồng</h3>
+                        <p>Sđt: 0374127004</p>
+                        <p>Email: Juniorthanh09@gmail.com</p>
+                        <p style="font-size: 20px; color:#39ECAB">“Hãy sống chứ đừng chỉ tốn tại”</p>
+                    </div>
+                    <div class="Link">
+                        <p style=" color:#14f1d4">
+                            Điều hướng:
+                        </p>
+                        <ul>
+                            <li><a href="#head">+ Trang chủ</a></li>
+                            <li><a href="#sec1">+ Về mình</a></li>
+                            <li><a href="#sec2">+ Kinh nghiệm</a></li>
+                            <li><a href="#sec3">+ Dịch vụ</a></li>
+                            <li><a href="#sec4">+ Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="Web_link">
+                        <p style=" color:#14f1d4">
+                            Các nguồn website khác:
+                        </p>
+                        <ul>
+                            <li><a href="https://ou.edu.vn/" target="_blank">+ OU.</a></li>
+                            <li><a href="#">+ CV.</a></li>
+                            <li><a href="#">+ Poster.</a></li>
+                        </ul>
+                    </div>
+                    <div class="Social_media">
+                        <p style=" color:#14f1d4">Liên hệ</p>
+                        <ul>
+                            <li><a href="https://www.facebook.com/thimaihong.le.54" target="_blank" id="fac"
+                                    alt="Facebook" aria-label="Facebook"><i class="fa-brands fa-facebook"
+                                        style="color:rgb(25, 0, 255)"></i></a>
+                            </li>
+                            <li><a href="https://www.tiktok.com/@maihongdayne" target="_blank" alt="Tiktok"
+                                    aria-label="Tiktok"><i class="fa-brands fa-tiktok"
+                                        style="color:rgb(109, 97, 101)"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Copyright">
+                    <p id="Foot"> © 2023 Copyright | Developer: Junior Newbie | Owner: Mai Hồng</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!---- Nếu bạn đọc được các dòng chữ này thì chào các đồng chí code thủ (hehe). Nếu bạn có góp ý - cải thiện gì cho code mình thì liên hệ Junior Thành giúp mình nhé. Mình xin cảm ơn. Chúc bạn một ngày tốt lành ---->
 </body>
 
 </html>
