@@ -99,6 +99,18 @@ function togglePlay() {
             document.getElementById("songContainer").classList.remove('unactive') // Hiển thị phần .Song khi phát
         }
 
+        var totalMinutes = Math.floor(audio.duration / 60);
+        var totalSeconds = Math.floor(audio.duration - totalMinutes * 60);
+        var totalDurationString = totalMinutes + ':' + (totalSeconds < 10 ? '0' : '') + totalSeconds;
+        document.getElementById('totalSongTime' + (currentLyricsIndex + 1)).innerText = totalDurationString;
+
+        var songTime = document.getElementById('currentSongTime' + (currentLyricsIndex + 1));
+        timeInterval = setInterval(function () {
+            var currentMinutes = Math.floor(audio.currentTime / 60);
+            var currentSeconds = Math.floor(audio.currentTime - currentMinutes * 60);
+            var currentTimeString = currentMinutes + ':' + (currentSeconds < 10 ? '0' : '') + currentSeconds;
+            songTime.innerText = currentTimeString;
+        }, 1000); // Cập nhật mỗi giây
     }
     isPlaying = !isPlaying;
 }
@@ -110,6 +122,7 @@ audio.onended = function () {
         currentSongIndex = 0;
     }
     currentLyricsIndex = currentSongIndex;
+    clearInterval(timeInterval);
     audio.src = songs[currentSongIndex];
     togglePlay();
 };
