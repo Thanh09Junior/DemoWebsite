@@ -64,6 +64,43 @@
     /* Áp dụng animation */
 }
 
+@media only screen and (max-width: 1234px) {
+    .Song {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        padding: 10px;
+        z-index: 1000;
+        color: white;
+        justify-content: center;
+        top: 30%;
+        left: 50%;
+        transform: translate(-140%, -140%);
+        align-items: center;
+        border-width: 3px;
+        /* Độ dày của border */
+        border-style: solid;
+        /* Kiểu của border */
+        animation: disco 5s infinite alternate;
+        /* Áp dụng animation */
+        transition: 0.5s ease-in-out;
+    }
+
+    .unactive {
+        display: flex !important;
+        transform: translate(-477%, -140%);
+        /* Áp dụng animation */
+    }
+
+}
+
+@media only screen and (max-width: 1018px) {
+    .Song {
+        display: none !important;
+    }
+}
+
+
 /*--------------- Header --------------*/
 
 header {
@@ -254,7 +291,88 @@ header .Main .Main_Text a:hover {
     transform: translateX(-50%);
 }
 
-/* Dịc
+/* Dịc*/
+
+@media only screen and (max-width: 1234px) {
+    header .containers {
+        gap: 135px;
+    }
+
+    header .Main {
+        gap: 250px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1018px) {
+    header .containers {
+        gap: 55px;
+    }
+
+    header .Main {
+        gap: 120px;
+    }
+
+
+}
+
+@media only screen and (max-width: 850px) {
+    header .containers {
+        gap: 80px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #Repon {
+        margin-bottom: 80px;
+    }
+
+    header .Main {
+        gap: 0px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .Main .Picture img {
+        display: none;
+    }
+
+    header .Main .Main_Text p {
+        display: none;
+    }
+
+    .Slogan {
+        margin-top: 120px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .Slogan p::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        /* Đưa gạch dưới về giữa */
+        bottom: 9%;
+        min-width: 600px;
+        height: 2px;
+        /* Độ dày của gạch dưới */
+        background-color: #F0EB7B;
+        /* Màu của gạch dưới */
+        transform: translateX(-50%);
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    header .containers {
+        gap: 40px;
+    }
+
+
+
 }
 
 /*------------Section 1--------------*/
@@ -332,6 +450,28 @@ header .Main .Main_Text a:hover {
     margin-right: 100px;
 }
 
+@media only screen and (max-width: 1234px) {
+
+    .section1 .container {
+        gap: 30px;
+    }
+
+
+
+
+}
+
+@media only screen and (max-width: 1086px) {
+    .section1 .container .Video {
+        display: none;
+    }
+
+    .section1 .container {
+        gap: 30px;
+        margin: 0 50px 0 50px;
+    }
+}
+
 
 /*-------------- Section 2----------------*/
 .section2 {
@@ -393,6 +533,11 @@ header .Main .Main_Text a:hover {
     color: #2847f7
 }
 
+@media only screen and (max-width: 874px) {
+    .section2 .container {
+        padding: 100px 0 100px 0;
+    }
+}
 
 /*-------------- Section 3 ----------------*/
 .section3 {
@@ -458,6 +603,12 @@ header .Main .Main_Text a:hover {
 .section3 .container a:hover {
     border-color: #F3C316;
     color: #F3C316
+}
+
+@media only screen and (max-width: 874px) {
+    .section3 .container {
+        margin: 0 10px 0 10px;
+    }
 }
 
 /*-------------- Section 4 ----------------*/
@@ -529,6 +680,62 @@ header .Main .Main_Text a:hover {
 .section4 .container .Contact_Main .Contact_text .Contact_t_1 ul li a i:hover {
     color: rgb(255, 2, 120) !important;
 
+}
+
+@media only screen and (max-width: 1313px) {
+    .section4 .container .Contact_Main {
+        gap: 70px;
+    }
+
+    .section4 .container .map img {
+        width: 508px !important;
+        height: 268px !important;
+    }
+}
+
+@media only screen and (max-width: 1061px) {
+    .section4 .container .Contact_Main {
+        gap: 70px;
+    }
+
+    .section4 .container .map img {
+        width: 608px !important;
+        height: 358px !important;
+    }
+
+    .section4 .container .Contact_Main {
+        margin-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .section4 .container .Contact_Main {
+        gap: 70px;
+    }
+
+    .section4 .container .map img {
+        width: 350px !important;
+        height: 200px !important;
+    }
+
+    .section4 .container .Contact_Main {
+        margin-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .section4 .container .map img {
+        display: none;
+    }
+
+    .section4 .container {
+        padding: 40px 0 40px 0;
+    }
+
+    .section3 .container .Skill .Skillframe img {
+        display: none;
+    }
 }
 
 /*-------------- Section 5 ----------------*/
@@ -624,4 +831,57 @@ footer .container .All-Footer .Social_media ul li a i:hover {
 
 footer .container .All-Footer .Social_media p {
     margin: 0 0 25px 18px;
+}
+
+@media only screen and (max-width: 1380px) {
+    footer .container .All-Footer {
+        gap: 140px;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+
+    footer .container .All-Footer {
+        gap: 80px;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+
+    footer .container .Web_link {
+        display: none;
+    }
+
+    footer .container .Link {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 874px) {
+
+    footer .container .Web_link {
+        display: none;
+    }
+
+    footer .container .Link {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    footer .container {
+        margin: 0 20px 0 20px;
+    }
+
+    footer .container .Web_link {
+        display: none;
+    }
+
+    footer .container .Link {
+        display: none;
+    }
+
+    footer .container .All-Footer .Social_media {
+        display: none;
+    }
 }
