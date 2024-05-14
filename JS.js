@@ -28,7 +28,9 @@ function updateDateTime() {
 // Gọi hàm `updateDateTime` mỗi giây
 setInterval(updateDateTime, 1000);
 
-const jobTitles = ["“Có hành động chưa chắc sẽ chiến thắng - Nhưng không hành động thì chắc chắn sẽ thất bại”", "“Khi mà chúng ta dám thử thì cơ hội của chúng ta ít nhất là hơn 0% - cơ hội là hi vọng”", "“Hãy sống chứ đừng chỉ tồn tại - Để khi ta nhìn lại hành trình cuộc đời ta không hối tiếc”"];
+const jobTitles = ["“Có hành động chưa chắc sẽ chiến thắng - Nhưng không hành động thì chắc chắn sẽ thất bại”", "“Khi mà chúng ta dám thử thì cơ hội của chúng ta ít nhất là hơn 0% - cơ hội là hi vọng”", "“Hãy sống chứ đừng chỉ tồn tại - Để khi ta nhìn lại hành trình cuộc đời ta không hối tiếc”",
+    "“Tôi không cần một anh hùng để cứu đời tôi - bởi vì tôi chính là người anh hùng đó”", "“Thời gian là câu trả lời chính xác nhất cho mọi câu hỏi - Là minh chứng của sự thành công”", "“Nhất lòng tin - Nhì hành động - Ba kiên trì | Nổ lực là để sau này không phải nói hai từ `giá như`”"
+];
 let currentJobIndex = 0;
 
 function showNextJobTitle() {
@@ -45,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const jobTitleElement = document.querySelector('.job-title');
         jobTitleElement.classList.remove('show'); // Loại bỏ class 'show' để ẩn đi với opacity 0
         setTimeout(showNextJobTitle, 1000); // Hiển thị công việc tiếp theo sau khi opacity đã chuyển thành 0
-    }, 10000); // Chuyển đổi sau mỗi 10 giây
+    }, 12000); // Chuyển đổi sau mỗi 10 giây
 });
 
 var audio = new Audio();
