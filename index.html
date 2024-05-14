@@ -19,10 +19,27 @@
         <div class="Video_container">
             <video src="./Assest/section1/Background.mp4" autoplay loop muted><video>
         </div>
+        <div class="Song" id="songContainer" style="display: none;">
+            <img src=" ./Assest/song/d26a4341af28dc2d21844bc29a754612.gif">
+            <div class="lyrics" id="lyrics1" style="display: none;">
+                <p style=" color:rgb(255, 102, 0)">Now Playing:</p>
+                <p><br>Cash Cash - Hero ft. Christina Perri</p>
+            </div>
+            <div class="lyrics" id="lyrics2" style="display: none;">
+                <p style="color:rgb(255, 102, 0)">Now Playing:</p>
+                <p><br>Unstoppable| Sia |I'm Unstoppable"</p>
+            </div>
+            <div class="lyrics" id="lyrics3" style="display: none;">
+                <p style="color:rgb(255, 102, 0)">Now Playing:</p>
+                <p><br>Justin Bieber - Never Say Never ft.</p>
+            </div>
+        </div>
         <div class="containers">
             <div class="ico">
                 <img src="./Assest/header/icon.png" alt="Ảnh icon của Mai Hồng">
-                <p>@maihongdayne</p>
+                <a href="https://www.facebook.com/thimaihong.le.54" target="_blank">
+                    <p>@maihongdayne</p>
+                </a>
             </div>
             <nav>
                 <ul>
@@ -49,7 +66,9 @@
                     Đối với mình thì bạn là ai không quan trọng. Miễn bạn mang trong mình một ngọn<br> lửa nhiệt huyết
                     và động lực phấn đấu thì mình sẽ cùng đồng hành cùng bạn.
                 </p>
-                <a href="#">Tìm hiểu thêm</a>
+                <a href="#sec1">Tìm hiểu thêm</a><span style="margin-left: 40px;color: white"><i
+                        class="fa-solid fa-play" onclick="togglePlay()" id="playIcon"></i><i class="fa-solid fa-pause"
+                        onclick="togglePlay()" id="pauseIcon" style="display: none;"></i></span>
             </div>
             <div class="Picture">
                 <img src="./Assest/section1/f-modified 1.webp" alt="Ảnh icon của Mai Hồng x2">
@@ -59,8 +78,7 @@
             <p style="color:#FF0FF5; margin-bottom: 20px;">
                 Động lực mỗi ngày
             </p>
-            <p style="color:#F0EB7B" id="Underline">
-                “Có hành động chưa chắc sẽ chiến thắng - Nhưng không hành động thì chắc chắn sẽ thất bại”
+            <p style="color:#F0EB7B" id="Underline" class="job-title">
             </p>
         </div>
 
@@ -146,10 +164,11 @@
                     <p>Hiện tại mình đang mở lớp dạy tiếng trung sơ cấp 1. Hoàn toàn dành cho những bạn nào muốn học
                         tiếng trung mà chưa biết bắt đầu từ đâu nhé.<br><br>
 
-                        Chương trình học: Giáo trình chuẩn HSK1, Giải đề thi thử HSK1.
+                        <span style="color:#6056ee ">Chương trình học:</span> Giáo trình chuẩn HSK1, Giải đề thi thử
+                        HSK1.
 
-                        <br><br>Thời lượng: 20 buổi online.
-                        <br><br>Người giảng dạy: Lê Thị Mai Hồng.
+                        <br><br> <span style="color:#6056ee ">Thời lượng:</span> 20 buổi online.
+                        <br><br> <span style="color:#6056ee ">Người giảng dạy:</span> Lê Thị Mai Hồng.
                     </p>
                 </div>
                 <div class="Skillframe">
@@ -159,9 +178,9 @@
                         <br><br>Tìm hiểu văn hóa Trung Quốc
                         <br><br> Tiếp cận các khóa học trại đông trại hè tại các trường ĐH/CĐ Trung Quốc (nếu có tổ
                         chức)
-                        <br><br>Học phí: Phù hợp với HSSV
+                        <br><br><span style="color:#6056ee ">Học phí:</span> Phù hợp với HSSV
 
-                        <br><br>Thời gian khai giảng: 03/06/2024
+                        <br><br><span style="color:#6056ee ">Thời gian khai giảng:</span> 03/06/2024
                     </p>
                 </div>
             </div>
@@ -178,15 +197,15 @@
                 <div class="Contact_text">
                     <div class="Contact_t_1">
                         <i class="fa-solid fa-phone"></i>
-                        <p>SĐT: 0374127004 (Zalo)</p>
+                        <p><span style="color: orange;">SĐT: </span> 0374127004 (Zalo)</p>
                     </div>
                     <div class="Contact_t_1">
                         <i class="fa-solid fa-envelope"></i>
-                        <p>Email: Juniorthanh09@gmail.com</p>
+                        <p><span style="color: orange;">Email: </span> Juniorthanh09@gmail.com</p>
                     </div>
                     <div class="Contact_t_1">
                         <i class="fa-solid fa-location-dot"></i>
-                        <p>Location: Đại học Mở TP.HCM cơ sở 1</p>
+                        <p><span style="color: orange;">Location: </span> Đại học Mở TP.HCM cơ sở 1</p>
                     </div>
                     <div class="Contact_t_1">
                         <ul>

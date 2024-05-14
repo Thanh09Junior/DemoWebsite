@@ -9,7 +9,7 @@ window.addEventListener('scroll', function () {
     const container = document.querySelector('.containers');
 
     // Kiểm tra nếu vị trí cuộn của trang vượt quá vị trí của section1 cộng với một giá trị cố định (ví dụ: 300px)
-    if (scrollPosition > section1Position - 400) {
+    if (scrollPosition > section1Position - 200) {
         // Chuyển class từ container sang fixed
         container.classList.add('fixed');
     } else {
