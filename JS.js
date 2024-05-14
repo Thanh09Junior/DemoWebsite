@@ -106,7 +106,7 @@ audio.onended = function () {
     currentSongIndex = currentSongIndex + 1;
     currentLyricsIndex = currentSongIndex;
     console.log(currentSongIndex);
-    audio.src = '';
+    audio.src = songs[currentSongIndex];
     togglePlay();
 };
 
