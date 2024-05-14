@@ -315,7 +315,7 @@ header .Main .Main_Text a:hover {
 .section1 .container .Main_text ul li a {
     width: 18px;
     height: 18px;
-    font-size: 30px;
+    font-size: 22px;
     text-decoration: none;
 }
 
@@ -475,7 +475,7 @@ header .Main .Main_Text a:hover {
     margin-bottom: 40px;
 }
 
-#sec4 {
+#Sec4 {
     color: #325BEF;
 }
 
