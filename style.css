@@ -58,6 +58,17 @@
     transition: 0.5s ease-in-out;
 }
 
+.Song .lyrics a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.Song .lyrics a:hover {
+    color: rgb(253, 173, 0);
+}
+
+
 .unactive {
     display: flex !important;
     transform: translate(-477%, -140%);
@@ -66,28 +77,14 @@
 
 @media only screen and (max-width: 1234px) {
     .Song {
-        position: absolute;
-        background: rgba(0, 0, 0, 0.5);
         display: flex;
-        padding: 10px;
-        z-index: 1000;
         color: white;
-        justify-content: center;
         top: 30%;
         left: 50%;
         transform: translate(-140%, -140%);
-        align-items: center;
-        border-width: 3px;
-        /* Độ dày của border */
-        border-style: solid;
-        /* Kiểu của border */
-        animation: disco 5s infinite alternate;
-        /* Áp dụng animation */
-        transition: 0.5s ease-in-out;
     }
 
     .unactive {
-        display: flex !important;
         transform: translate(-477%, -140%);
         /* Áp dụng animation */
     }
@@ -96,10 +93,24 @@
 
 @media only screen and (max-width: 1018px) {
     .Song {
-        display: none !important;
+        display: flex;
+        color: white;
+        left: 57%;
+        transform: translate(-140%, -140%);
+    }
+
+    .unactive {
+        transform: translate(-477%, -140%);
+        /* Áp dụng animation */
     }
 }
 
+@media only screen and (max-width: 870px) {
+    .Song {
+        display: none !important;
+    }
+
+}
 
 /*--------------- Header --------------*/
 
@@ -259,6 +270,8 @@ header .Main .Main_Text a:hover {
 .Main .Picture img {
     width: 200px;
     height: 200px;
+    border: 2px solid aqua;
+    border-radius: 50%;
 }
 
 .Main .Picture img:hover {
@@ -346,35 +359,28 @@ header .Main .Main_Text a:hover {
 
     .Slogan {
         margin-top: 120px;
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
     }
 
-    .Slogan p::after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        /* Đưa gạch dưới về giữa */
-        bottom: 9%;
-        min-width: 600px;
-        height: 2px;
-        /* Độ dày của gạch dưới */
-        background-color: #F0EB7B;
-        /* Màu của gạch dưới */
-        transform: translateX(-50%);
-    }
 
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
     header .containers {
-        gap: 20px;
+        gap: 35px;
     }
 
     header .Main {
         gap: 0px;
         margin-left: 30px;
         margin-right: 30px;
+        margin-top: 100px;
+    }
+
+    .Slogan {
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
 }
@@ -572,9 +578,9 @@ header .Main .Main_Text a:hover {
 .section3 .container .Skill .Skillframe {
     width: 400px;
     padding: 20px;
-    border: 2px solid linear-gradient(to bottom, #F5FCFF 97%, #5E3BEE 3%);
+    border: 3px solid #5E3BEE;
     text-align: justify;
-    background-image: linear-gradient(to bottom, #F5FCFF 99%, #5E3BEE 1%);
+    background-color: #F5FCFF;
     border-radius: 25px;
     transition: all 0.3s ease-in-out;
 }
